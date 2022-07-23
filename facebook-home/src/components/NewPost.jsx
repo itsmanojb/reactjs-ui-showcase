@@ -19,7 +19,9 @@ const NewPost = () => {
       <div className="p-3 flex items-center gap-4">
         <div className="h-12 w-12 rounded-full overflow-hidden">
           <img
-            src={'https://xsgames.co/randomusers/assets/avatars/male/5.jpg'}
+            src={
+              'https://lh5.googleusercontent.com/-KLzePzmbqTs/AAAAAAAAAAI/AAAAAAAAAD8/henWhVuLqE4/photo.jpg?sz=256'
+            }
             alt={'John Doe'}
             className="h-full w-full"
           />

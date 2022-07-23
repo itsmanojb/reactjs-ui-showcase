@@ -18,7 +18,11 @@ const ListActionButton = ({ icon }) => {
 const Avatar = ({ imgUrl, altText, online = true, hasStory = false }) => {
   return (
     <div className="relative h-10 w-10 rounded-full">
-      <img src={imgUrl} alt={altText} className="h-9 w-9 m-1 rounded-full" />
+      <img
+        src={imgUrl}
+        alt={altText}
+        className="h-9 w-9 m-1 rounded-full object-cover"
+      />
       {online && (
         <div className="absolute bg-green-500 h-3 w-3 rounded-full -bottom-1 -right-1 border-2 border-white dark:border-neutral-800 z-10"></div>
       )}
@@ -44,7 +48,7 @@ const ListItem = ({ data }) => {
 };
 
 const OnlineUsersList = () => {
-  const [onlineUsers] = useState(OnlineUsers);
+  const onlineUsers = OnlineUsers.sort(() => 0.5 - Math.random());
 
   return (
     <div className="pr-4 space-y-4 pb-8">

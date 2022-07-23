@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import BookmarksList from './components/BookmarksList';
-import StoryBoard from './components/StoryBoard';
+import Stories from './components/Stories';
 import NewPost from './components/NewPost';
 import NewsFeed from './components/NewsFeed';
 import OnlineUsersList, { FAB } from './components/OnlineUsersList';
@@ -19,7 +19,7 @@ function App() {
               <div className="h-9 w-9 rounded-full overflow-hidden">
                 <img
                   src={
-                    'https://xsgames.co/randomusers/assets/avatars/male/5.jpg'
+                    'https://lh5.googleusercontent.com/-KLzePzmbqTs/AAAAAAAAAAI/AAAAAAAAAD8/henWhVuLqE4/photo.jpg?sz=256'
                   }
                   alt={'John Doe'}
                   className="h-full w-full"
@@ -34,7 +34,7 @@ function App() {
         </div>
         <div className="flex-1 pt-4 pb-12">
           <div className="max-w-[560px] w-full mx-auto">
-            <StoryBoard />
+            <Stories />
             <NewPost />
             <NewsFeed />
           </div>

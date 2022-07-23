@@ -86,9 +86,10 @@ export const FeedPosts = [
   {
     id: '4',
     user: {
-      username: 'jony_ive',
-      name: 'Jony Ive',
-      profile_picture: 'https://pbs.twimg.com/media/BJQuj0OCAAAzcAB.jpg',
+      username: 'kerala_tourism',
+      name: 'Kerala Tourism',
+      profile_picture:
+        'https://upload.wikimedia.org/wikipedia/en/thumb/a/a5/Kerala_God%27s_Own_Country_Logo.svg/1200px-Kerala_God%27s_Own_Country_Logo.svg.png',
     },
     post_body:
       'Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala. It stands at an altitude of 350m (1200ft) above the mean sea level.\n\nJatayu Nature Park holds the distinction of having the world’s largest bird sculpture, which is of Jatayu.\nThe sculpture measures (200 feet (61 m) long, 150 feet (46 m) wide, 70 feet (21 m) in height and occupies 15,000 square feet (1,400 m2) of floor area). It was sculpted by Rajiv Anchal.\n\nThis rock-theme nature park was the first Public–private partnership tourism initiative in the state of Kerala under the BOT model. The park is about 38 km (24 mi) away from the city of Kollam and 46 km (29 mi) away from the state capital, Thiruvananthapuram.\nAfter completion, it opened to visitors on 17 August 2018.',
@@ -107,10 +108,146 @@ export const FeedPosts = [
         text: "Jatayu Earth's Center, a unique tourism destination that integrates Culture, Art, Adventure, Entertainment and Health with Mother Nature! The eco friendly tourism destination is a unique combination of the hills, valleys, caves and vegetation spread across 65 acres of land, almost unaffected even though a crowd-pulling tourist destination is built right there.",
         created_at: '8h',
         user: {
-          username: 'tcook',
-          name: 'Tim Cook',
+          username: 'kerala_tourism',
+          name: 'Kerala Tourism',
           profile_picture:
-            'https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg',
+            'https://upload.wikimedia.org/wikipedia/en/thumb/a/a5/Kerala_God%27s_Own_Country_Logo.svg/1200px-Kerala_God%27s_Own_Country_Logo.svg.png',
+        },
+      },
+    ],
+  },
+  {
+    id: '5',
+    user: {
+      username: 'msd',
+      name: 'MS Dhoni',
+      profile_picture:
+        'https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/26/63/a9/2663a9aa-7f93-2e7c-00d6-c03213b79b70/source/256x256bb.jpg',
+    },
+    post_body: '',
+    post_media: [
+      'https://static.toiimg.com/thumb/msid-54448208,imgsize-54442,width-800,height-600,resizemode-75/54448208.jpg',
+    ],
+    posted_on: '2y',
+    likes: 46,
+    liked_by: [],
+    shares: 141,
+    shared_by: [],
+    liked: false,
+    comments: [
+      {
+        id: 1,
+        text: '❤️❤️❤️',
+        created_at: '8h',
+        user: {
+          username: 'kohli',
+          name: 'Virat Kohli',
+          profile_picture:
+            'https://i.pinimg.com/originals/2a/50/fa/2a50fa473599173a78135bb6f1f94a2b.jpg',
+        },
+      },
+    ],
+  },
+  {
+    id: '6',
+    user: {
+      username: 'sundar.p',
+      name: 'Sundar Pichai',
+      profile_picture:
+        'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/bjrd7lfsay6cao9jzkmr',
+    },
+    post_body:
+      "Thousands of schools in Ukraine have been forced to close due to the war. To help, we're working with @MON_UKRAINE @UNESCO to provide Chromebooks and training for teachers to keep lessons going, expanding Ukrainian educational content on YouTube and more.",
+    post_media: [
+      'https://images.firstpost.com/wp-content/uploads/2017/06/Sundar_Pichai_New.jpg',
+    ],
+    posted_on: '4d',
+    likes: 61,
+    liked_by: [],
+    shares: 4,
+    shared_by: [],
+    liked: false,
+    comments: [
+      {
+        id: 1,
+        text: '❤️❤️❤️',
+        created_at: '8h',
+        user: {
+          username: 'kohli',
+          name: 'Virat Kohli',
+          profile_picture:
+            'https://i.pinimg.com/originals/2a/50/fa/2a50fa473599173a78135bb6f1f94a2b.jpg',
+        },
+      },
+    ],
+  },
+  {
+    id: '7',
+    user: {
+      username: 'tcook',
+      name: 'Tim Cook',
+      profile_picture:
+        'https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg',
+    },
+    post_body: 'Cheers !! 🥂',
+    post_media: ['https://miro.medium.com/max/1200/0*AsAHSeBrKi3DeMnI.jpg'],
+    posted_on: '6mo',
+    likes: 211,
+    liked_by: [],
+    shares: 18,
+    shared_by: [],
+    liked: true,
+    comments: [],
+  },
+  {
+    id: '8',
+    user: {
+      username: 'ironman',
+      name: 'Robert Downey Jr.',
+      profile_picture:
+        'https://pbs.twimg.com/profile_images/685915759055351808/ILeBa4II_400x400.png',
+    },
+    post_body: 'and I am.... IRONMAN',
+    post_media: [
+      'https://c4.wallpaperflare.com/wallpaper/14/548/927/the-avengers-avengers-endgame-avengers-endgame-infinity-gauntlet-iron-man-hd-wallpaper-preview.jpg',
+    ],
+    posted_on: '8mo',
+    likes: 468,
+    liked_by: [],
+    shares: 248,
+    shared_by: [],
+    liked: false,
+    comments: [],
+  },
+  {
+    id: '9',
+    user: {
+      username: 'cumberbatch',
+      name: 'Benedict Cumberbatch',
+      profile_picture:
+        'https://pyxis.nymag.com/v1/imgs/f47/788/caac0f6d9bc8edc26a8c8b17d69a41e447-02-sherlock.rsquare.w330.jpg',
+    },
+    post_body:
+      'Sometimes it is the very people who no one imagines anything of who do the things no one can imagine.',
+    post_media: [
+      'https://dazedimg-dazedgroup.netdna-ssl.com/900/azure/dazed-prod/1090/7/1097824.jpg',
+    ],
+    posted_on: '11mo',
+    likes: 17,
+    liked_by: [],
+    shares: 2,
+    shared_by: [],
+    liked: true,
+    comments: [
+      {
+        id: 1,
+        text: "Hardest time to lie to somebody is when they're expecting to be lied to.",
+        created_at: '2h',
+        user: {
+          username: 'cumberbatch',
+          name: 'Benedict Cumberbatch',
+          profile_picture:
+            'https://pyxis.nymag.com/v1/imgs/f47/788/caac0f6d9bc8edc26a8c8b17d69a41e447-02-sherlock.rsquare.w330.jpg',
         },
       },
     ],

@@ -27,20 +27,16 @@ const UserStory = () => {
   return (
     <div className="h-40 sm:h-48 w-32 min-w-[60px] bg-gray-200 dark:bg-neutral-800 rounded-lg shadow-sm shadow-gray-300 dark:shadow-none  overflow-hidden relative">
       <div className="w-9 h-9 rounded-full bg-white absolute top-2.5 left-2.5 z-10 border-[3px] border-blue-500 overflow-hidden">
-        <img src="https://xsgames.co/randomusers/avatar.php?g=female" alt="" />
+        <img src="/react.svg" alt="" />
       </div>
-      <img
-        src="https://images.pexels.com/photos/12809120/pexels-photo-12809120.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-        alt=""
-        className="h-full object-cover"
-      />
+      <img src="/react.svg" alt="" className="h-full object-cover" />
       <div
         className="absolute inset-0 z-30 p-2 text-white flex items-end text-xs font-semibold"
         style={{
           backgroundImage: 'linear-gradient(0deg, #0008, #0002, transparent)',
         }}
       >
-        User Name
+        React JS
       </div>
     </div>
   );
@@ -64,7 +60,7 @@ const MoreStoryButton = () => {
   );
 };
 
-const StoryBoard = () => {
+const Stories = () => {
   const [stories, setStories] = useState([1]);
   return (
     <div className="hidden xxs:block w-screen sm:w-full mb-4">
@@ -82,4 +78,4 @@ const StoryBoard = () => {
   );
 };
 
-export default StoryBoard;
+export default Stories;

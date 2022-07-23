@@ -42,14 +42,16 @@ export const OnlineUsers = [
   },
   {
     id: 7,
-    name: 'Consuela Mena',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/56.jpg',
-    hasStory: true,
+    name: 'Robert Downey Jr.',
+    avatar:
+      'https://pbs.twimg.com/profile_images/685915759055351808/ILeBa4II_400x400.png',
+    hasStory: false,
   },
   {
     id: 8,
-    name: 'Lois Oliverius',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/23.jpg',
+    name: 'APJ Abdul Kalam',
+    avatar:
+      'https://is2-ssl.mzstatic.com/image/thumb/Purple111/v4/94/43/3a/94433adf-92a9-1a65-1b71-338fdfe0b238/source/256x256bb.jpg',
     hasStory: false,
   },
   {
@@ -60,32 +62,36 @@ export const OnlineUsers = [
   },
   {
     id: 10,
-    name: 'Angella Almany',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/75.jpg',
-    hasStory: true,
+    name: 'Irrfan Khan',
+    avatar:
+      'https://i.tribune.com.pk/media/images/1737453-irrfankhan-1529396073/1737453-irrfankhan-1529396073-400x230.jpg',
+    hasStory: false,
   },
   {
     id: 11,
-    name: 'Coralie Korecky',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/2.jpg',
+    name: 'MS Dhoni',
+    avatar:
+      'https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/26/63/a9/2663a9aa-7f93-2e7c-00d6-c03213b79b70/source/256x256bb.jpg',
     hasStory: true,
   },
   {
     id: 12,
-    name: 'Kyung Caseman',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/18.jpg',
+    name: 'Virat Kohli',
+    avatar:
+      'https://i.pinimg.com/originals/2a/50/fa/2a50fa473599173a78135bb6f1f94a2b.jpg',
     hasStory: false,
   },
   {
     id: 13,
-    name: 'Cristopher Ellingboe',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/77.jpg',
-    hasStory: false,
+    name: 'Emma Watson',
+    avatar:
+      'https://pbs.twimg.com/profile_images/707640504306016256/YcoKdF59_400x400.jpg',
+    hasStory: true,
   },
   {
     id: 14,
-    name: 'Blake Gritts',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/75.jpg',
+    name: 'Millie Bobby Brown',
+    avatar: 'https://a.wattpad.com/useravatar/ElevenlikesEGGOS.256.519393.jpg',
     hasStory: false,
   },
 ];

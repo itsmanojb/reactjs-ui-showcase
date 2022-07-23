@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Menu, Transition } from '@headlessui/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { BsSearch, BsMessenger, BsBellFill } from 'react-icons/bs';
 import {
@@ -10,6 +11,9 @@ import {
   MdOutlineGroupWork,
   MdOutlineApps,
 } from 'react-icons/md';
+import Messages from './Messages';
+import Notifications from './Notifications';
+import ProfileMenu from './ProfileMenu';
 
 const NavTab = ({ icon, onTabSelect, active = false, klass = '' }) => {
   return (
@@ -122,17 +126,101 @@ const Header = () => {
               klass={'hidden xlg:flex'}
               icon={<MdOutlineApps size={25} />}
             />
-            <UserMenu icon={<BsMessenger size={18} />} />
-            <UserMenu icon={<BsBellFill size={19} />} />
-            <UserMenu
-              img={
-                <img
-                  src="https://xsgames.co/randomusers/assets/avatars/male/5.jpg"
-                  alt="John Doe"
-                  className="rounded-full h-10 w-10"
-                />
-              }
-            />
+            <div>
+              <Menu>
+                {({ open }) => (
+                  <>
+                    <Menu.Button>
+                      <UserMenu
+                        klass={
+                          open
+                            ? 'text-blue-500 bg-blue-100 dark:bg-[#2d88ff33] dark:hover:bg-[#92c1ff33]'
+                            : ''
+                        }
+                        icon={<BsMessenger size={19} />}
+                      />
+                    </Menu.Button>
+                    <Transition
+                      show={open}
+                      enter="transition duration-100 ease-out"
+                      enterFrom="transform scale-95 opacity-0"
+                      enterTo="transform scale-100 opacity-100"
+                      leave="transition duration-75 ease-out"
+                      leaveFrom="transform scale-100 opacity-100"
+                      leaveTo="transform scale-95 opacity-0"
+                    >
+                      <Menu.Items as="div" static>
+                        <Messages />
+                      </Menu.Items>
+                    </Transition>
+                  </>
+                )}
+              </Menu>
+            </div>
+            <div>
+              <Menu>
+                {({ open }) => (
+                  <>
+                    <Menu.Button>
+                      <UserMenu
+                        klass={
+                          open
+                            ? 'text-blue-500 bg-blue-100 dark:bg-[#2d88ff33] dark:hover:bg-[#92c1ff33]'
+                            : ''
+                        }
+                        icon={<BsBellFill size={19} />}
+                      />
+                    </Menu.Button>
+                    <Transition
+                      show={open}
+                      enter="transition duration-100 ease-out"
+                      enterFrom="transform scale-95 opacity-0"
+                      enterTo="transform scale-100 opacity-100"
+                      leave="transition duration-75 ease-out"
+                      leaveFrom="transform scale-100 opacity-100"
+                      leaveTo="transform scale-95 opacity-0"
+                    >
+                      <Menu.Items as="div" static>
+                        <Notifications />
+                      </Menu.Items>
+                    </Transition>
+                  </>
+                )}
+              </Menu>
+            </div>
+            <div>
+              <Menu>
+                {({ open }) => (
+                  <>
+                    <Menu.Button>
+                      <UserMenu
+                        img={
+                          <img
+                            src="https://lh5.googleusercontent.com/-KLzePzmbqTs/AAAAAAAAAAI/AAAAAAAAAD8/henWhVuLqE4/photo.jpg?sz=256"
+                            alt="John Doe"
+                            className="rounded-full h-10 w-10"
+                          />
+                        }
+                        klass="mt-2"
+                      />
+                    </Menu.Button>
+                    <Transition
+                      show={open}
+                      enter="transition duration-100 ease-out"
+                      enterFrom="transform scale-95 opacity-0"
+                      enterTo="transform scale-100 opacity-100"
+                      leave="transition duration-75 ease-out"
+                      leaveFrom="transform scale-100 opacity-100"
+                      leaveTo="transform scale-95 opacity-0"
+                    >
+                      <Menu.Items as="div" static>
+                        <ProfileMenu />
+                      </Menu.Items>
+                    </Transition>
+                  </>
+                )}
+              </Menu>
+            </div>
           </div>
         </div>
       </div>
