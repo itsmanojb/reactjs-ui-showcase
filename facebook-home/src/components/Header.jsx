@@ -18,8 +18,10 @@ const NavTab = ({ icon, onTabSelect, active = false, klass = '' }) => {
       onClick={() => onTabSelect()}
     >
       <div
-        className={`px-2 py-3 flex items-center justify-center text-gray-500 ${
-          active ? '' : 'hover:bg-gray-100 '
+        className={`px-2 py-3 flex items-center justify-center _text__muted ${
+          active
+            ? ''
+            : '_hover hover:text-neutral-600 dark:hover:text-neutral-400'
         } rounded-lg transition-all`}
       >
         {icon}
@@ -74,7 +76,7 @@ const NavTabs = () => {
 const UserMenu = ({ icon, img, klass }) => {
   return (
     <div
-      className={`cursor-pointer h-10 w-10 bg-gray-200 hover:bg-gray-300 flex items-center justify-center rounded-full transition ${klass}`}
+      className={`cursor-pointer h-10 w-10 bg-gray-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 flex items-center justify-center rounded-full transition ${klass}`}
     >
       {icon || img}
     </div>
@@ -98,7 +100,7 @@ const Header = () => {
             </div>
           </div>
           <div className="hidden xl:block">
-            <div className="bg-gray-100 pl-10 pr-2 py-2 rounded-full relative">
+            <div className="bg-gray-100 dark:bg-neutral-700 pl-10 pr-2 py-2 rounded-full relative">
               <span className="absolute left-4 top-3.5 opacity-60">
                 <BsSearch size={14} />
               </span>

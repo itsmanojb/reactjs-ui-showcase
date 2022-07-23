@@ -15,7 +15,7 @@ function App() {
           style={{ height: 'calc(100vh - 56px)' }}
         >
           <div className="pt-2 pl-2">
-            <div className="cursor-pointer hover:bg-gray-100 rounded-lg flex items-center gap-4 p-2 transition">
+            <div className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
               <div className="h-9 w-9 rounded-full overflow-hidden">
                 <img
                   src={
@@ -25,7 +25,7 @@ function App() {
                   className="h-full w-full"
                 />
               </div>
-              <div className="text-normal font-medium text-gray-800">
+              <div className="text-normal font-medium _text__default">
                 John Doe
               </div>
             </div>

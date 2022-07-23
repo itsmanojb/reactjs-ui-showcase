@@ -122,7 +122,7 @@ const BookMarks = [
 
 const ListItem = ({ data }) => {
   return (
-    <div className="cursor-pointer hover:bg-gray-100 rounded-lg flex items-center gap-4 p-2 transition">
+    <div className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
       <div className="relative h-9 w-9">
         <img
           src={`/icons/${data.iconFileName}.png`}
@@ -130,7 +130,7 @@ const ListItem = ({ data }) => {
           className="h-full w-full"
         />
       </div>
-      <div className="text-normal font-medium text-gray-800">{data.label}</div>
+      <div className="text-[15px] font-medium _text__default">{data.label}</div>
     </div>
   );
 };
@@ -153,22 +153,22 @@ const BookmarksList = () => {
           ))}
         </div>
         <div
-          className="cursor-pointer hover:bg-gray-100 group rounded-lg flex items-center gap-4 p-2 transition"
+          className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 group rounded-lg flex items-center gap-4 p-2 transition"
           onClick={() => setListCollapsed(!listCollapsed)}
         >
-          <div className="relative h-9 w-9 rounded-full bg-gray-100 group-hover:bg-gray-200 flex items-center justify-center text-gray-600 transition">
+          <div className="relative h-9 w-9 rounded-full bg-gray-100 dark:bg-neutral-800 group-hover:bg-gray-200 dark:group-hover:bg-neutral-900 flex items-center justify-center text-gray-600 transition">
             {listCollapsed ? (
               <FaChevronDown size={18} />
             ) : (
               <FaChevronUp size={18} />
             )}
           </div>
-          <div className="font-medium text-gray-800">
+          <div className="font-medium _text__defualt text-[15px]">
             See {listCollapsed ? 'more' : 'less'}
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap text-[13px] text-gray-700 pl-2 pr-6">
+      <div className="flex flex-wrap text-[13px] _text__muted pl-2 pr-6">
         <a
           href="#"
           className="hover:underline"

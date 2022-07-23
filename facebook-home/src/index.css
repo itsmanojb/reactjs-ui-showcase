@@ -10,3 +10,24 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+@layer components {
+  ._text__default {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  ._text__muted {
+    @apply text-gray-500 dark:text-neutral-500;
+  }
+  ._card {
+    @apply bg-white dark:bg-neutral-800 shadow-sm dark:shadow-none shadow-gray-400;
+  }
+  ._divider {
+    @apply border-neutral-200 dark:border-neutral-700;
+  }
+  ._input {
+    @apply bg-gray-100 hover:bg-gray-200 dark:hover:bg-neutral-600 dark:bg-neutral-700 dark:placeholder:text-neutral-400 placeholder:text-gray-600;
+  }
+  ._hover {
+    @apply transition hover:bg-gray-100 dark:hover:bg-neutral-700;
+  }
+}

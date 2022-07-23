@@ -11,7 +11,7 @@ const ActionButton = ({ children }) => {
   return (
     <button
       type="button"
-      className="flex-1 flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-100 transition rounded-[4px] p-1.5 text-sm text-gray-700"
+      className="flex-1 flex items-center justify-center gap-2 cursor-pointer _hover transition rounded-[4px] p-1.5 text-sm _text__default"
     >
       {children}
     </button>
@@ -100,7 +100,7 @@ const PostCard = ({ data }) => {
   const [commentsShown, setCommentsShown] = useState(false);
 
   return (
-    <div className="bg-white rounded-md shadow-sm shadow-gray-400">
+    <div className="_card rounded-md">
       <div className="flex items-center gap-2 mb-2 justify-between px-2 xs:px-3 pt-3">
         <div className="relative">
           <img
@@ -108,13 +108,13 @@ const PostCard = ({ data }) => {
             alt=""
             className="h-11 w-11 rounded-full"
           />
-          <div className="absolute bg-green-500 h-3 w-3 rounded-full bottom-0 -right-1 border-2 border-white z-10"></div>
+          <div className="absolute bg-green-500 h-3 w-3 rounded-full bottom-0 -right-1 border-2 border-white dark:border-neutral-800 z-10"></div>
         </div>
         <div className="flex flex-col justify-center pl-1 pt-2">
-          <a href="#" className="font-medium text-sm leading-none">
+          <a href="#" className="font-medium text-sm leading-tight">
             {data.user.name}
           </a>
-          <small className="text-gray-500">{data.posted_on}</small>
+          <small className="_text__muted text-[12px]">{data.posted_on}</small>
         </div>
         <div className="ml-auto">
           <button
@@ -127,7 +127,7 @@ const PostCard = ({ data }) => {
       </div>
       {data.post_body && (
         <div className="px-2 xs:px-3 pb-2">
-          <p className="text-[14px] leading-tight text-gray-700 whitespace-pre-wrap">
+          <p className="text-[14px] leading-tight _text__default whitespace-pre-wrap">
             {data.post_body}
           </p>
         </div>
@@ -142,11 +142,11 @@ const PostCard = ({ data }) => {
         </div>
       )}
       <div className="py-1 px-2 xs:px-3 flex justify-between items-center">
-        <div className="flex items-center gap-1 text-sm text-gray-700">
+        <div className="flex items-center gap-1 text-sm _text__default">
           <img src={LikeIcon} alt="Like" className="h-[16px] w-[16px]" />{' '}
           {data.likes}
         </div>
-        <div className="flex items-center justify-between text-[13px] gap-3 text-gray-500">
+        <div className="flex items-center justify-between text-[13px] gap-3 _text__muted">
           <span
             className="cursor-pointer hover:underline"
             onClick={() => setCommentsShown(true)}
@@ -156,7 +156,7 @@ const PostCard = ({ data }) => {
           <span>{data.shares} shares</span>
         </div>
       </div>
-      <div className="flex gap-1 items-center py-1.5 border-t mx-2 xs:mx-3">
+      <div className="flex gap-1 items-center py-1.5 border-t _divider mx-2 xs:mx-3">
         {data.liked ? (
           <ActionButton>
             <AiFillLike size={18} className="text-blue-600" />
