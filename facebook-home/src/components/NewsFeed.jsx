@@ -5,7 +5,7 @@ import { AiOutlineLike, AiFillLike } from 'react-icons/ai';
 import { TiArrowSortedDown } from 'react-icons/ti';
 import LikeIcon from '../assets/like.svg';
 import LoadingSpinner from './LoadingSpinner';
-import { FeedPosts } from '../lib/FeedPosts';
+import useFetch from '../hooks/useFetch';
 
 const ActionButton = ({ children }) => {
   return (
@@ -181,15 +181,47 @@ const PostCard = ({ data }) => {
   );
 };
 
-const NewsFeed = () => {
-  const [posts, setPosts] = useState(FeedPosts);
+const Skeleton = () => {
   return (
     <div className="space-y-4">
-      {posts.map((post, i) => (
-        <PostCard key={i} data={post} />
+      {[...Array(2)].map((_, i) => (
+        <div className="_card h-[250px] rounded-lg" key={i}>
+          <div className="p-4 flex gap-2 items-center animate-pulse">
+            <div className="h-10 w-10 bg-neutral-700 rounded-full"></div>
+            <div className="flex flex-col gap-2">
+              <div className="h-3 bg-neutral-700 rounded-full w-36"></div>
+              <div className="h-3 bg-neutral-700 rounded-full w-24"></div>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   );
+};
+
+const NewsFeed = () => {
+  const { response, loading, error } = useFetch('posts');
+
+  if (loading) {
+    return <Skeleton />;
+  }
+
+  if (error) {
+    return (
+      <div className="h-[250px] flex flex-col items-center justify-center">
+        <p className="text-base _text__default">Failed to load posts</p>
+        <small className="text-sm _text__muted">Try again later</small>
+      </div>
+    );
+  }
+
+  return response ? (
+    <div className="space-y-4">
+      {response[0].map((post, i) => (
+        <PostCard key={i} data={post} />
+      ))}
+    </div>
+  ) : null;
 };
 
 export default NewsFeed;
