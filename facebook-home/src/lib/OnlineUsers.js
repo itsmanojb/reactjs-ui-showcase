@@ -1,0 +1,86 @@
+export const OnlineUsers = [
+  {
+    id: 1,
+    name: 'Daisey Huisingh',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/39.jpg',
+    hasStory: false,
+  },
+  {
+    id: 2,
+    name: 'Dewayne Grochowalski',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/25.jpg',
+    hasStory: false,
+  },
+  {
+    id: 3,
+    name: 'Mose Diwan',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/50.jpg',
+    hasStory: false,
+  },
+  {
+    id: 4,
+    name: 'Kendra Moellenkamp',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/9.jpg',
+    hasStory: true,
+  },
+  {
+    id: 5,
+    name: 'Reda Paulik',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/10.jpg',
+    hasStory: false,
+  },
+  {
+    id: 6,
+    name: 'Arron Dozier',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/74.jpg',
+    hasStory: false,
+  },
+  {
+    id: 7,
+    name: 'Consuela Mena',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/56.jpg',
+    hasStory: true,
+  },
+  {
+    id: 8,
+    name: 'Lois Oliverius',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/23.jpg',
+    hasStory: false,
+  },
+  {
+    id: 9,
+    name: 'Tony Vonachen',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/23.jpg',
+    hasStory: false,
+  },
+  {
+    id: 10,
+    name: 'Angella Almany',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/75.jpg',
+    hasStory: true,
+  },
+  {
+    id: 11,
+    name: 'Coralie Korecky',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/2.jpg',
+    hasStory: true,
+  },
+  {
+    id: 12,
+    name: 'Kyung Caseman',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/18.jpg',
+    hasStory: false,
+  },
+  {
+    id: 13,
+    name: 'Cristopher Ellingboe',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/77.jpg',
+    hasStory: false,
+  },
+  {
+    id: 14,
+    name: 'Blake Gritts',
+    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/75.jpg',
+    hasStory: false,
+  },
+];
