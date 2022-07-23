@@ -1,6 +1,6 @@
-# Reactjs-takehometask-v1
+# Reactjs-ui-showcase
 
-This repo contains two folders for the respective tasks as following:
+Repo contains UI (website clones) created with ReactJS
 
-- **Question 1**: Using React create a dummy Facebook home page
-- **Question 2**: Using React create a dummy Instagram home page
+- **Example 1**: Facebook home page
+- **Example 2**: Instagram home page
