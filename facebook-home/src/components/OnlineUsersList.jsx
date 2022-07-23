@@ -15,11 +15,11 @@ const ListActionButton = ({ icon }) => {
   );
 };
 
-const FAB = () => {
+export const FAB = () => {
   return (
     <button
       type="button"
-      className="text-gray-800 w-12 h-12 fixed bottom-8 right-8 z-20 rounded-full hover:bg-gray-200 flex justify-center items-center bg-white"
+      className="text-gray-800 w-12 h-12 fixed bottom-4 right-4 md:bottom-8 md:right-8 z-20 rounded-full hover:bg-gray-200 flex justify-center items-center bg-white"
       style={{
         boxShadow:
           '0 2px 4px rgba(0, 0, 0, 0.1),0 12px 28px rgba(0, 0, 0, 0.2)',
@@ -89,7 +89,6 @@ const OnlineUsersList = () => {
           <div className="font-medium text-gray-800">Create New Group</div>
         </div>
       </div>
-      <FAB />
     </div>
   );
 };

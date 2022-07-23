@@ -6,7 +6,7 @@ const ActionButton = ({ children }) => {
   return (
     <button
       type="button"
-      className="flex-1 flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-100 transition rounded-[5px] p-2 text-[15px] text-gray-800 font-medium"
+      className="flex-1 flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-100 transition rounded-[5px] p-2 text-[15px] text-gray-800 font-medium whitespace-nowrap "
     >
       {children}
     </button>
@@ -15,7 +15,7 @@ const ActionButton = ({ children }) => {
 
 const NewPost = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm shadow-gray-400">
+    <div className="bg-white rounded-lg shadow-sm shadow-gray-400 mb-4">
       <div className="p-3 flex items-center gap-4">
         <div className="h-12 w-12 rounded-full overflow-hidden">
           <img

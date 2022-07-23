@@ -1,38 +1,43 @@
 export const OnlineUsers = [
   {
     id: 1,
-    name: 'Daisey Huisingh',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/39.jpg',
+    name: 'Ratan Tata',
+    avatar:
+      'https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/v1397188430/e49b47a162b582593855d3a2828e0ba5.jpg',
     hasStory: false,
   },
   {
     id: 2,
-    name: 'Dewayne Grochowalski',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/25.jpg',
+    name: 'Sachin Tendulkar',
+    avatar:
+      'https://pbs.twimg.com/profile_images/1410819014255730689/u76ZqFWN_400x400.jpg',
     hasStory: false,
   },
   {
     id: 3,
-    name: 'Mose Diwan',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/50.jpg',
-    hasStory: false,
-  },
-  {
-    id: 4,
-    name: 'Kendra Moellenkamp',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/9.jpg',
+    name: 'Sundar Pichai',
+    avatar:
+      'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/bjrd7lfsay6cao9jzkmr',
     hasStory: true,
   },
   {
+    id: 4,
+    name: 'Mark Zuckerberg',
+    avatar:
+      'https://pbs.twimg.com/profile_images/730271326150103042/gR9RVbmC_400x400.jpg',
+    hasStory: false,
+  },
+  {
     id: 5,
-    name: 'Reda Paulik',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/female/10.jpg',
+    name: 'Jony Ive',
+    avatar: 'https://pbs.twimg.com/media/BJQuj0OCAAAzcAB.jpg',
     hasStory: false,
   },
   {
     id: 6,
-    name: 'Arron Dozier',
-    avatar: 'https://xsgames.co/randomusers/assets/avatars/male/74.jpg',
+    name: 'Tim Cook',
+    avatar:
+      'https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg',
     hasStory: false,
   },
   {

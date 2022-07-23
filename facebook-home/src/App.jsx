@@ -3,7 +3,7 @@ import BookmarksList from './components/BookmarksList';
 import StoryBoard from './components/StoryBoard';
 import NewPost from './components/NewPost';
 import NewsFeed from './components/NewsFeed';
-import OnlineUsersList from './components/OnlineUsersList';
+import OnlineUsersList, { FAB } from './components/OnlineUsersList';
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
           <BookmarksList />
         </div>
         <div className="flex-1 pt-4 pb-12">
-          <div className="max-w-[560px] w-full mx-auto space-y-4">
+          <div className="max-w-[560px] w-full mx-auto">
             <StoryBoard />
             <NewPost />
             <NewsFeed />
@@ -46,6 +46,7 @@ function App() {
           <OnlineUsersList />
         </div>
       </div>
+      <FAB />
     </main>
   );
 }
