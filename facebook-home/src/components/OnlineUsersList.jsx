@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { RiVideoAddFill } from 'react-icons/ri';
 import { IoSearchOutline, IoEllipsisHorizontal } from 'react-icons/io5';
 import { MdOutlineAdd, MdOutlineCreate } from 'react-icons/md';
@@ -42,7 +41,7 @@ const ListItem = ({ data }) => {
         online={true}
         hasStory={data.hasStory}
       />
-      <div className="font-base _text__default">{data.name}</div>
+      <div className="font-medium text-[15px] _text__default">{data.name}</div>
     </div>
   );
 };

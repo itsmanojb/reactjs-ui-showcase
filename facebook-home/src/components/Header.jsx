@@ -14,6 +14,7 @@ import {
 import Messages from './Messages';
 import Notifications from './Notifications';
 import ProfileMenu from './ProfileMenu';
+import useAuthContext from '../hooks/useAuthContext';
 
 const NavTab = ({ icon, onTabSelect, active = false, klass = '' }) => {
   return (
@@ -88,11 +89,12 @@ const UserMenu = ({ icon, img, klass }) => {
 };
 
 const Header = () => {
+  const { user } = useAuthContext();
   return (
     <div className="bg-white dark:bg-neutral-800 fixed top-0 inset-x-0 h-14 shadow-sm z-50">
       <div className="h-full w-full px-4 flex justify-between items-center gap-2">
         <div className="flex items-center gap-2 w-[500px]">
-          <a href="#" className="block w-10 h-10">
+          <a href="/" className="block w-10 h-10">
             <img src="/logo.webp" alt="Logo" className="w-10 h-10" />
           </a>
           <div className="xl:hidden">
@@ -196,8 +198,8 @@ const Header = () => {
                       <UserMenu
                         img={
                           <img
-                            src="https://lh5.googleusercontent.com/-KLzePzmbqTs/AAAAAAAAAAI/AAAAAAAAAD8/henWhVuLqE4/photo.jpg?sz=256"
-                            alt="John Doe"
+                            src={user.profile_picture}
+                            alt={user.name}
                             className="rounded-full h-10 w-10"
                           />
                         }

@@ -1,13 +1,21 @@
-import Header from './components/Header';
-import BookmarksList from './components/BookmarksList';
-import Stories from './components/Stories';
-import NewPost from './components/NewPost';
-import NewsFeed from './components/NewsFeed';
-import OnlineUsersList, { FAB } from './components/OnlineUsersList';
+import {
+  Header,
+  BookmarksList,
+  Stories,
+  NewPost,
+  NewsFeed,
+  OnlineUsersList,
+  FAB,
+} from './components';
+import useAuthContext, {
+  AuthContext,
+  initialState,
+} from './hooks/useAuthContext';
 
-function App() {
+const Home = () => {
+  const { user } = useAuthContext();
   return (
-    <main className="bg-gray-50 dark:bg-neutral-900 h-screen overflow-x-hidden">
+    <div className="bg-gray-50 dark:bg-neutral-900 h-screen overflow-x-hidden">
       <Header />
       <div className="w-full max-w-[1920px] mx-auto flex pt-14 justify-between">
         <div
@@ -18,10 +26,8 @@ function App() {
             <div className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
               <div className="h-9 w-9 rounded-full overflow-hidden">
                 <img
-                  src={
-                    'https://lh5.googleusercontent.com/-KLzePzmbqTs/AAAAAAAAAAI/AAAAAAAAAD8/henWhVuLqE4/photo.jpg?sz=256'
-                  }
-                  alt={'John Doe'}
+                  src={user.profile_picture}
+                  alt={user.name}
                   className="h-full w-full"
                 />
               </div>
@@ -47,8 +53,15 @@ function App() {
         </div>
       </div>
       <FAB />
-    </main>
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <AuthContext.Provider value={{ user: initialState.user }}>
+      <Home />
+    </AuthContext.Provider>
   );
 }
-
 export default App;

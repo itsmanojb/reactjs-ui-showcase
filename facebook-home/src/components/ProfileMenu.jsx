@@ -5,8 +5,10 @@ import {
   IoMoonSharp,
 } from 'react-icons/io5';
 import { MdFeedback } from 'react-icons/md';
+import useAuthContext from '../hooks/useAuthContext';
 
 const ProfileMenu = () => {
+  const { user } = useAuthContext();
   return (
     <div className="_dd__wrapper right-0 w-[356px] top-0">
       <div
@@ -16,12 +18,12 @@ const ProfileMenu = () => {
         <div className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-700 rounded-lg flex items-center gap-4 p-2 transition">
           <div className="relative h-12 w-12 rounded-full bg-gray-200 dark:bg-neutral-600 flex items-center justify-center text-gray-600 dark:text-gray-300">
             <img
-              src="https://lh5.googleusercontent.com/-KLzePzmbqTs/AAAAAAAAAAI/AAAAAAAAAD8/henWhVuLqE4/photo.jpg?sz=256"
-              alt="John Doe"
+              src={user.profile_picture}
+              alt={user.name}
               className="rounded-full"
             />
           </div>
-          <div className="font-medium _text__default">John Doe</div>
+          <div className="font-medium _text__default">{user.name}</div>
         </div>
         <div className="  border-t _divider pt-1 m-1">
           <div className="hover:bg-gray-100 dark:hover:bg-neutral-700 py-1.5 px-2 -mx-1 rounded-md cursor-pointer text-blue-500 font-medium text-[15px]">

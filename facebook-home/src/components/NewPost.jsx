@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsEmojiLaughing, BsImages } from 'react-icons/bs';
 import { RiLiveFill } from 'react-icons/ri';
+import useAuthContext from '../hooks/useAuthContext';
 
 const ActionButton = ({ children }) => {
   return (
@@ -14,15 +15,14 @@ const ActionButton = ({ children }) => {
 };
 
 const NewPost = () => {
+  const { user } = useAuthContext();
   return (
     <div className="_card rounded-lg mb-4">
       <div className="p-3 flex items-center gap-4">
         <div className="h-12 w-12 rounded-full overflow-hidden">
           <img
-            src={
-              'https://lh5.googleusercontent.com/-KLzePzmbqTs/AAAAAAAAAAI/AAAAAAAAAD8/henWhVuLqE4/photo.jpg?sz=256'
-            }
-            alt={'John Doe'}
+            src={user.profile_picture}
+            alt={user.name}
             className="h-full w-full"
           />
         </div>
