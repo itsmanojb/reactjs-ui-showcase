@@ -10,3 +10,17 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+/* @layer components {} */
+
+._prime {
+  color: rgb(0, 149, 246);
+}
+
+._border {
+  border-color: rgb(219, 219, 219);
+}
+
+._muted {
+  color: #c7c7c7;
+}

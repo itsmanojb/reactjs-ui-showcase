@@ -20,7 +20,7 @@ const NavMenu = ({ icon, img, klass = '' }) => {
 
 const Header = () => {
   return (
-    <div className="border-b bg-white px-2 h-[60px] sticky top-0 w-screen">
+    <div className="border-b _border bg-white px-2 h-[60px] sticky top-0 w-screen z-50">
       <div className="w-full h-full max-w-[945px] flex items-center mx-auto justify-between">
         <div className="flex justify-between items-center flex-1 max-w-[600px]">
           <a href="/" className="block">
@@ -28,7 +28,7 @@ const Header = () => {
           </a>
           <div className="hidden md:block">
             <div className="bg-neutral-100 pl-10 pr-2 py-1.5 rounded-lg relative">
-              <span className="absolute left-4 top-3 opacity-60">
+              <span className="absolute left-4 top-3 opacity-60 text-gray-700">
                 <BsSearch size={14} />
               </span>
               <input
