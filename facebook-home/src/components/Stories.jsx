@@ -46,8 +46,8 @@ const UserStory = ({ data }) => {
 
 const StoryPlaceholder = () => {
   return (
-    <div className="h-40 sm:h-48 w-32 min-w-[60px] bg-neutral-100 dark:bg-neutral-800 rounded-xl relative">
-      <div className="w-9 h-9 rounded-full bg-neutral-200 dark:bg-neutral-700 absolute top-2.5 left-2.5"></div>
+    <div className="h-40 sm:h-48 w-32 min-w-[60px] bg-gray-200 dark:bg-neutral-800 rounded-xl relative">
+      <div className="w-9 h-9 rounded-full bg-gray-300 dark:bg-neutral-700 absolute top-2.5 left-2.5"></div>
     </div>
   );
 };

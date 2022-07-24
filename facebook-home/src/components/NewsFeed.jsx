@@ -33,7 +33,7 @@ const NewsFeed = () => {
   if (error) {
     // if json-server unavailable / fails, use fallback
     if (API_FALLBACK) {
-      const allPosts = DummyPosts[0];
+      const allPosts = DummyPosts;
       return (
         <div className="space-y-4">
           {allPosts.map((post, i) => (
@@ -51,7 +51,7 @@ const NewsFeed = () => {
   }
 
   if (response) {
-    const allPosts = response[0];
+    const allPosts = response;
     return (
       <div className="space-y-4">
         {allPosts.map((post, i) => (

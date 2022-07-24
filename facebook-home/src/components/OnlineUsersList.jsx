@@ -34,7 +34,7 @@ const Avatar = ({ imgUrl, altText, online = true, hasStory = false }) => {
 
 const ListItem = ({ data }) => {
   return (
-    <div className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
+    <div className="cursor-pointer hover:bg-gray-200 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
       <Avatar
         imgUrl={data.avatar}
         altText={data.name}
@@ -52,7 +52,7 @@ const OnlineUsersList = () => {
   return (
     <div className="pr-4 space-y-4 pb-8">
       <div>
-        <div className="flex items-center justify-between pt-4 pb-2">
+        <div className="flex items-center justify-between pt-4 pb-2 pl-3">
           <h3 className="font-semibold text-gray-500">Contacts</h3>
           <div className="inline-flex gap-2 items-center justify-between">
             <ListActionButton icon={<RiVideoAddFill size={17} />} />
@@ -70,8 +70,8 @@ const OnlineUsersList = () => {
         <div className="flex items-center justify-between pt-3 pb-2">
           <h3 className="font-semibold text-gray-500">Group Conversations</h3>
         </div>
-        <div className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
-          <div className="relative h-9 w-9 rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center text-gray-600">
+        <div className="cursor-pointer hover:bg-gray-200 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
+          <div className="relative h-9 w-9 rounded-full bg-gray-300 dark:bg-neutral-800 flex items-center justify-center text-gray-600">
             <MdOutlineAdd size={20} />
           </div>
           <div className="font-medium _text__default">Create New Group</div>

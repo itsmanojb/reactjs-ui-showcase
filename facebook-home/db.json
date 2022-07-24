@@ -1,6 +1,26 @@
 {
-  "posts": [
+  "posts":
+
     [{
+        "id": "6",
+        "user": {
+          "username": "sundar.p",
+          "name": "Sundar Pichai",
+          "profile_picture": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/bjrd7lfsay6cao9jzkmr"
+        },
+        "post_body": "Thousands of schools in Ukraine have been forced to close due to the war. To help, we're working with @MON_UKRAINE @UNESCO to provide Chromebooks and training for teachers to keep lessons going, expanding Ukrainian educational content on YouTube and more.",
+        "post_media": [
+          "https://images.firstpost.com/wp-content/uploads/2017/06/Sundar_Pichai_New.jpg"
+        ],
+        "posted_on": "4d",
+        "likes": 61,
+        "liked_by": [],
+        "shares": 4,
+        "shared_by": [],
+        "liked": false,
+        "comments": []
+      },
+      {
         "id": "1",
         "user": {
           "username": "tata",
@@ -132,34 +152,6 @@
         }]
       },
       {
-        "id": "6",
-        "user": {
-          "username": "sundar.p",
-          "name": "Sundar Pichai",
-          "profile_picture": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/bjrd7lfsay6cao9jzkmr"
-        },
-        "post_body": "Thousands of schools in Ukraine have been forced to close due to the war. To help, we're working with @MON_UKRAINE @UNESCO to provide Chromebooks and training for teachers to keep lessons going, expanding Ukrainian educational content on YouTube and more.",
-        "post_media": [
-          "https://images.firstpost.com/wp-content/uploads/2017/06/Sundar_Pichai_New.jpg"
-        ],
-        "posted_on": "4d",
-        "likes": 61,
-        "liked_by": [],
-        "shares": 4,
-        "shared_by": [],
-        "liked": false,
-        "comments": [{
-          "id": 1,
-          "text": "❤️❤️❤️",
-          "created_at": "8h",
-          "user": {
-            "username": "kohli",
-            "name": "Virat Kohli",
-            "profile_picture": "https://i.pinimg.com/originals/2a/50/fa/2a50fa473599173a78135bb6f1f94a2b.jpg"
-          }
-        }]
-      },
-      {
         "id": "7",
         "user": {
           "username": "tcook",
@@ -226,5 +218,5 @@
         }]
       }
     ]
-  ]
+
 }

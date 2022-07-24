@@ -122,7 +122,7 @@ const BookMarks = [
 
 const ListItem = ({ data }) => {
   return (
-    <div className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
+    <div className="cursor-pointer hover:bg-gray-200 dark:hover:bg-neutral-800 rounded-lg flex items-center gap-4 p-2 transition">
       <div className="relative h-9 w-9">
         <img
           src={`/icons/${data.iconFileName}.png`}
@@ -153,10 +153,10 @@ const BookmarksList = () => {
           ))}
         </div>
         <div
-          className="cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 group rounded-lg flex items-center gap-4 p-2 transition"
+          className="cursor-pointer hover:bg-gray-200 dark:hover:bg-neutral-800 group rounded-lg flex items-center gap-4 p-2 transition"
           onClick={() => setListCollapsed(!listCollapsed)}
         >
-          <div className="relative h-9 w-9 rounded-full bg-gray-100 dark:bg-neutral-800 group-hover:bg-gray-200 dark:group-hover:bg-neutral-900 flex items-center justify-center text-gray-600 transition">
+          <div className="relative h-9 w-9 rounded-full bg-gray-200 dark:bg-neutral-800 group-hover:bg-gray-300 dark:group-hover:bg-neutral-900 flex items-center justify-center text-gray-600 transition">
             {listCollapsed ? (
               <FaChevronDown size={18} />
             ) : (

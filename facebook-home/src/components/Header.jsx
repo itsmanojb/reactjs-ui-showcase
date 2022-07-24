@@ -81,7 +81,7 @@ const NavTabs = () => {
 const UserMenu = ({ icon, img, klass }) => {
   return (
     <div
-      className={`cursor-pointer h-10 w-10 bg-gray-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 flex items-center justify-center rounded-full transition ${klass}`}
+      className={`cursor-pointer h-10 w-10 bg-gray-100 hover:bg-gray-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 flex items-center justify-center rounded-full transition ${klass}`}
     >
       {icon || img}
     </div>
