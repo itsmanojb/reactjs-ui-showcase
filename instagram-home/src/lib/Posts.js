@@ -1,0 +1,330 @@
+export const DummyPosts = [
+  {
+    attribution: null,
+    tags: [],
+    type: 'image',
+    location: null,
+    filter: 'Normal',
+    created_time: 'July 15',
+    link: 'https://instagram.com/p/CdgZHc2J4Xv/',
+    images: {
+      low_resolution: {
+        url: '',
+        width: 320,
+        height: 320,
+      },
+      thumbnail: {
+        url: '',
+        width: 150,
+        height: 150,
+      },
+      standard_resolution: {
+        url: 'https://media.techeblog.com/images/mkbhd-marques-brownlee-nothing-phone-1-hands-on.jpg',
+        width: 640,
+        height: 640,
+      },
+    },
+    users_in_photo: [],
+    caption: {
+      created_time: '1w',
+      text: "Don't want nothing? How bout something? 😅",
+      from: {
+        username: 'mkbhd',
+        profile_picture:
+          'https://podcasts.voxmedia.com/perch/resources/mkbhd400xpng.png',
+        id: '231175345',
+        full_name: 'Marques Brownlee',
+      },
+      id: '1059308188572412119',
+    },
+    user_has_liked: false,
+    id: '1059308185661565035_23275345',
+    comments: '50',
+    top_comments: [
+      {
+        id: 1,
+        text: 'SUB TO CHANNEL WOULD BE NOTHING 😂',
+        created_time: '',
+        user_has_liked: true,
+        user: {
+          username: 'mrwhosetheboss',
+          profile_picture: '',
+          id: '1516272235',
+          full_name: 'Arun Maini',
+        },
+      },
+      {
+        id: 2,
+        text: '🔥🔥🔥',
+        created_time: '',
+        user_has_liked: false,
+        user: {
+          username: 'bengeskin',
+          profile_picture: '',
+          id: '1547627235',
+          full_name: 'Ben Geskin',
+        },
+      },
+    ],
+    user: {
+      username: 'mkbhd',
+      profile_picture:
+        'https://podcasts.voxmedia.com/perch/resources/mkbhd400xpng.png',
+      id: '231175345',
+      full_name: 'Marques Brownlee',
+    },
+  },
+  {
+    attribution: null,
+    tags: ['TheBatmanOnPrime'],
+    type: 'image',
+    location: null,
+    filter: 'Normal',
+    created_time: '2 days ago',
+    link: 'https://instagram.com/p/CgTRxZsD9pO/',
+    images: {
+      low_resolution: {
+        url: '',
+        width: 320,
+        height: 320,
+      },
+      thumbnail: {
+        url: '',
+        width: 150,
+        height: 150,
+      },
+      standard_resolution: {
+        url: 'https://www.pinkvilla.com/imageresize/batman_poster.jpg?width=752&format=webp&t=pvorg',
+        width: 640,
+        height: 640,
+      },
+    },
+    users_in_photo: [],
+    caption: {
+      created_time: '2d',
+      text: 'he has arrived 🦇\n\n#TheBatmanOnPrime, July 27',
+      from: {
+        username: 'primevideoin',
+        profile_picture: 'https://pic.clubic.com/v1/images/1822519/raw',
+        id: '15476275',
+        full_name: 'amazon prime video IN',
+      },
+      id: '1059322357729942165',
+    },
+    likes: '43,402 likes',
+    user_has_liked: false,
+    id: '1059322354827483655_1547627005',
+    comments: '3,678',
+    top_comments: [],
+    user: {
+      username: 'primevideoin',
+      profile_picture: 'https://pic.clubic.com/v1/images/1822519/raw',
+      id: '15476275',
+      full_name: 'amazon prime video IN',
+    },
+  },
+  {
+    attribution: null,
+    tags: [],
+    type: 'image',
+    location: null,
+    filter: 'Normal',
+    created_time: 'June 25',
+    link: 'https://instagram.com/p/CfOGCN5oFDF/',
+    images: {
+      low_resolution: {
+        url: '',
+        width: 320,
+        height: 320,
+      },
+      thumbnail: {
+        url: '',
+        width: 150,
+        height: 150,
+      },
+      standard_resolution: {
+        url: 'https://filmfare.wwmindia.com/content/2022/jun/shahrukhkhan21656304371.jpg',
+        width: 640,
+        height: 640,
+      },
+    },
+    users_in_photo: [],
+    caption: {
+      created_time: '4w',
+      text: 'See you next year on 25th Jan, 2023. Celebrate #Pathaan with #YRF50 only at a big screen near you on 25th January, 2023. Releasing in Hindi, Tamil and Telugu. @deepikapadukone | @thejohnabraham | #SiddharthAnand | @yrf',
+      from: {
+        username: 'iamsrk',
+        profile_picture:
+          'https://pbs.twimg.com/profile_images/661498958838018048/GWteP7G4_400x400.jpg',
+        id: '1547627005',
+        full_name: 'Shah Rukh Khan',
+      },
+      id: '1059322357729942165',
+    },
+    likes: '1,549,355 likes',
+    user_has_liked: false,
+    id: '1059322354827483655_1547627005',
+    comments: '43,034',
+    top_comments: [],
+    user: {
+      username: 'iamsrk',
+      profile_picture:
+        'https://pbs.twimg.com/profile_images/661498958838018048/GWteP7G4_400x400.jpg',
+      id: '1547627005',
+      full_name: 'Shah Rukh Khan',
+    },
+  },
+  {
+    attribution: null,
+    tags: ['DidYouKnow', 'RealisHere'],
+    type: 'image',
+    location: null,
+    filter: 'Normal',
+    created_time: 'July 10',
+    link: 'https://instagram.com/p/CdnxqHbJSFn/',
+    images: {
+      low_resolution: {
+        url: '',
+        width: 320,
+        height: 320,
+      },
+      thumbnail: {
+        url: '',
+        width: 150,
+        height: 150,
+      },
+      standard_resolution: {
+        url: 'https://i.pinimg.com/originals/8f/cc/26/8fcc26e943fd2a27087583fa3adcd823.jpg',
+        width: 640,
+        height: 640,
+      },
+    },
+    users_in_photo: [],
+    caption: {
+      created_time: '2w',
+      text: "Trying to remember if you locked the door while stepping out!\n\nPictured here is a beautiful shot of an elephant. 🐘\n\n#DidYouKnow: Human babies take more than 8 months to stand on their feet, but baby elephants just take 20 minutes. Amazing, isn't it?\nMeet the world's most ruthless hunters and dominating creatures. Explore their stories in Africa's Deadliest, every Monday at 9 PM on Nat Geo Wild. #NatGeoWild #RealisHere\n\nPicture credits: Unknown 📸",
+      from: {
+        username: 'natgeoindia',
+        profile_picture:
+          'https://cdn.iconscout.com/icon/free/png-256/national-geographic-461820.png',
+        id: '1547537005',
+        full_name: 'National Geographic India',
+      },
+      id: '1059322357729942165',
+    },
+    likes: '256,809 likes',
+    user_has_liked: true,
+    id: '1059322354827483655_1547627005',
+    comments: '7,259',
+    top_comments: [],
+    user: {
+      username: 'natgeoindia',
+      profile_picture:
+        'https://cdn.iconscout.com/icon/free/png-256/national-geographic-461820.png',
+      id: '1547537005',
+      full_name: 'National Geographic India',
+    },
+  },
+  {
+    attribution: null,
+    tags: [],
+    type: 'image',
+    location: null,
+    filter: 'Normal',
+    created_time: 'May 16',
+    link: 'https://instagram.com/p/CdnxqHbJSFn/',
+    images: {
+      low_resolution: {
+        url: '',
+        width: 320,
+        height: 320,
+      },
+      thumbnail: {
+        url: '',
+        width: 150,
+        height: 150,
+      },
+      standard_resolution: {
+        url: 'https://cdn.gulte.com/wp-content/uploads/2022/06/FTGdyFtaUAA9U9-.jpg',
+        width: 640,
+        height: 640,
+      },
+    },
+    users_in_photo: [],
+    caption: {
+      created_time: '9w',
+      text: "Did you hear that ROAR?\nTHAT'S US SCREAMING IN EXCITEMENT! 😱🤯😱🤯😱😳\nRRR is coming to Netflix in Hindi and WE. ARE. READY.\n\n@ssrajamouli @jrntr @alwaysramcharan @dvvmovies @penmovies @jayantilalgadaofficial @ajaydevgn @aliaabhatt",
+      from: {
+        username: 'netflix_in',
+        profile_picture:
+          'https://thelogofinder.com/wp-content/uploads/edd/2021/10/netflix-icon.svg',
+        id: '1547627005',
+        full_name: 'Netflix India',
+      },
+      id: '1059322357729942165',
+    },
+    likes: '256,809 likes',
+    user_has_liked: true,
+    id: '1059322354827483655_1547627005',
+    comments: '245',
+    top_comments: [],
+    user: {
+      username: 'netflix_in',
+      profile_picture:
+        'https://thelogofinder.com/wp-content/uploads/edd/2021/10/netflix-icon.svg',
+      id: '1547627005',
+      full_name: 'Netflix India',
+    },
+  },
+  {
+    attribution: null,
+    tags: ['minutestomidnight'],
+    type: 'image',
+    location: null,
+    filter: 'Normal',
+    created_time: 'May 13',
+    link: 'https://instagram.com/p/CdgZHc2J4Xv/',
+    images: {
+      low_resolution: {
+        url: '',
+        width: 320,
+        height: 320,
+      },
+      thumbnail: {
+        url: '',
+        width: 150,
+        height: 150,
+      },
+      standard_resolution: {
+        url: 'https://i.scdn.co/image/ab67616d0000b27346e207de66ba06422897f769',
+        width: 640,
+        height: 640,
+      },
+    },
+    users_in_photo: [],
+    caption: {
+      created_time: '10 w',
+      text: 'Join us in celebrating 15 years of Minutes to Midnight with 4 bonus tracks including "No Roads Left” and “Across the Line." Now streaming everywhere.#minutestomidnight',
+      from: {
+        username: 'linkinpark',
+        profile_picture:
+          'https://pbs.twimg.com/profile_images/1293912688393744386/qnnU4pYy_400x400.jpg',
+        id: '23275345',
+        full_name: 'LINKIN PARK',
+      },
+      id: '1059308188572412119',
+    },
+    likes: '56,809 likes',
+    user_has_liked: false,
+    id: '1059308185661565035_23275345',
+    comments: '13,102',
+    top_comments: [],
+    user: {
+      username: 'linkinpark',
+      profile_picture:
+        'https://pbs.twimg.com/profile_images/1293912688393744386/qnnU4pYy_400x400.jpg',
+      id: '23275345',
+      full_name: 'LINKIN PARK',
+    },
+  },
+];
