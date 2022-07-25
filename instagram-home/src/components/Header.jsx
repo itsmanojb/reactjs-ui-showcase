@@ -7,6 +7,9 @@ import {
   RiCompass3Line,
   RiHeartLine,
 } from 'react-icons/ri';
+import useAuthContext from '../hooks/useAuthContext';
+import Notifications from './Notifications';
+import ProfileMenu from './ProfileMenu';
 
 const NavMenu = ({ icon, img, klass = '' }) => {
   return (
@@ -19,6 +22,7 @@ const NavMenu = ({ icon, img, klass = '' }) => {
 };
 
 const Header = () => {
+  const { user } = useAuthContext();
   return (
     <div className="border-b _border bg-white px-2 h-[60px] sticky top-0 w-screen z-50">
       <div className="w-full h-full max-w-[945px] flex items-center mx-auto justify-between">
@@ -70,14 +74,45 @@ const Header = () => {
                       leaveTo="transform scale-95 opacity-0"
                     >
                       <Menu.Items as="div" static>
-                        <>oi</>
+                        <Notifications />
                       </Menu.Items>
                     </Transition>
                   </>
                 )}
               </Menu>
             </div>
-            <div>profile</div>
+            <div>
+              <Menu>
+                {({ open }) => (
+                  <>
+                    <Menu.Button>
+                      <NavMenu
+                        img={
+                          <img
+                            src={user.profile_picture}
+                            className="w-6 h-6 rounded-full"
+                            alt={user.name}
+                          />
+                        }
+                      />
+                    </Menu.Button>
+                    <Transition
+                      show={open}
+                      enter="transition duration-100 ease-out"
+                      enterFrom="transform scale-95 opacity-0"
+                      enterTo="transform scale-100 opacity-100"
+                      leave="transition duration-75 ease-out"
+                      leaveFrom="transform scale-100 opacity-100"
+                      leaveTo="transform scale-95 opacity-0"
+                    >
+                      <Menu.Items as="div" static>
+                        <ProfileMenu />
+                      </Menu.Items>
+                    </Transition>
+                  </>
+                )}
+              </Menu>
+            </div>
           </div>
         </div>
       </div>

@@ -4,6 +4,10 @@ import { BsEmojiLaughing } from 'react-icons/bs';
 import { FiSend } from 'react-icons/fi';
 import useFetch from '../hooks/useFetch';
 
+// static data
+import { DummyPosts } from '../lib/Posts';
+const API_FALLBACK = true;
+
 const PostCard = ({ data }) => {
   return (
     <div className="bg-white border _border rounded-lg">
@@ -164,16 +168,16 @@ const Feed = () => {
 
   if (error) {
     // if json-server unavailable / fails, use fallback
-    // if (API_FALLBACK) {
-    //   const allPosts = DummyPosts;
-    //   return (
-    //     <div className="space-y-4">
-    //       {allPosts.map((post, i) => (
-    //         <PostCard key={i} data={post} />
-    //       ))}
-    //     </div>
-    //   );
-    // }
+    if (API_FALLBACK) {
+      const allPosts = DummyPosts;
+      return (
+        <div className="space-y-4">
+          {allPosts.map((post, i) => (
+            <PostCard key={i} data={post} />
+          ))}
+        </div>
+      );
+    }
     return (
       <div className="h-[250px] flex flex-col items-center justify-center">
         <p className="text-base text-neutral-800">Failed to load posts</p>

@@ -169,10 +169,10 @@ const Stories = () => {
       <div className="absolute top-0 left-4 bottom-0 flex items-center z-10">
         {!isLeft && (
           <div
-            className="h-6 w-6 rounded-full shadow-md shadow-neutral-400 cursor-pointer bg-white flex items-center justify-center"
+            className="h-6 w-6 rounded-full shadow-md shadow-neutral-400 cursor-pointer bg-white text-neutral-800 flex items-center justify-center"
             onClick={() => scroll('left')}
           >
-            <FiChevronLeft size={20} />
+            <FiChevronLeft size={18} />
           </div>
         )}
       </div>
@@ -193,10 +193,10 @@ const Stories = () => {
       <div className="absolute top-0 right-4 bottom-0 flex items-center z-10">
         {!isRight && (
           <div
-            className="h-6 w-6 rounded-full shadow-md shadow-neutral-400 cursor-pointer bg-white flex items-center justify-center"
+            className="h-6 w-6 rounded-full shadow-md shadow-neutral-400 cursor-pointer bg-white text-neutral-800 flex items-center justify-center"
             onClick={() => scroll('right')}
           >
-            <FiChevronRight size={20} />
+            <FiChevronRight size={18} />
           </div>
         )}
       </div>

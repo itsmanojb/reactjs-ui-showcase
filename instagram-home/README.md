@@ -2,6 +2,8 @@
 
 Instagram Web UI - designed with React and Tailwind CSS.
 
+Check out the [live demo](https://showcase-instagram-ui.surge.sh 'Instagram UI')
+
 ## Development
 
 To run this application locally follow the steps:
