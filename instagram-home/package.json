@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "json-server --delay 2000 --watch db.json"
+    "server": "json-server --delay 1000 --watch db.json"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
