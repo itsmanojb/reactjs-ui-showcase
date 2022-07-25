@@ -1,6 +1,6 @@
 # Reactjs-ui-showcase
 
-Repo contains UI (website clones) created with ReactJS
+Repo contains UI / websites created with React
 
-- **Example 1**: Facebook home page
-- **Example 2**: Instagram home page
+- [Facebook](https://github.com/itsmanojb/reactjs-ui-showcase/tree/main/facebook-home) 
+- [Instagram](https://github.com/itsmanojb/reactjs-ui-showcase/tree/main/instagram-home)
