@@ -9,6 +9,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --border-color: rgb(239, 243, 244);
+  --light-gray: rgb(247, 249, 249);
+  --theme-color: rgb(29, 155, 240);
+  --theme-color-hover: rgb(16, 140, 216);
+  --black: rgb(15, 20, 25);
 }
 
 /* @layer components {} */
+
+._border {
+  border-color: var(--border-color);
+  border-style: solid;
+}
+
+._bg_l-g {
+  background-color: var(--light-gray);
+}
+
+._text-theme {
+  color: var(--theme-color);
+}
+
+._bg-theme {
+  background-color: var(--theme-color);
+}
+
+._hover._bg-theme:hover {
+  background-color: var(--theme-color-hover);
+}
+
+._bg-black {
+  background-color: var(--black);
+}
