@@ -9,9 +9,9 @@ const Messages = () => {
   const [collapsed, setCollapsed] = useState(true);
   const recentMessages = Chats;
   return (
-    <div className="hidden lg:block fixed bottom-0 inset-x-0">
+    <div className="hidden lg:block fixed bottom-0 right-5">
       <div
-        className="w-[350px] xl:w-[400px] mr-5 _shadow ml-auto bg-white"
+        className="w-[350px] xl:w-[400px] _shadow ml-auto bg-white"
         style={{ borderRadius: '1rem 1rem 0 0' }}
       >
         <div
