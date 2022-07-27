@@ -2,6 +2,10 @@
 
 Instagram Web UI - designed with React and Tailwind CSS.
 
+Homepage
+
+![screen](https://user-images.githubusercontent.com/11155266/181348458-ff9111a2-1eea-40e8-8cf1-0c097b1a413e.png)
+
 Check out the [live demo](https://showcase-twitter-ui.surge.sh 'Twitter UI')
 
 ## Development
