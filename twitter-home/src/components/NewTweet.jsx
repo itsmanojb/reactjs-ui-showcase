@@ -13,7 +13,7 @@ const NewTweet = () => {
   const [tweetText, setTweetText] = useState('');
   return (
     <div className="py-2 border-b _border">
-      <div className="px-4 flex items-start gap-3">
+      <div className="px-2 xs:px-4 flex items-start gap-3">
         <div className="h-12 w-12 rounded-full overflow-hidden bg-gray-200">
           <img
             src={user.profile_picture}
@@ -52,7 +52,7 @@ const NewTweet = () => {
               </button>
               <button
                 type="button"
-                className="w-8 h-8 rounded-full text-[#1d9bf0] hover:bg-[#1d9bf01a] flex justify-center items-center transition"
+                className="hidden w-8 h-8 rounded-full text-[#1d9bf0] hover:bg-[#1d9bf01a] md:flex justify-center items-center transition"
               >
                 <BiPoll size={20} />
               </button>
@@ -64,7 +64,7 @@ const NewTweet = () => {
               </button>
               <button
                 type="button"
-                className="w-8 h-8 rounded-full text-[#1d9bf0] hover:bg-[#1d9bf01a] flex justify-center items-center transition"
+                className="hidden w-8 h-8 rounded-full text-[#1d9bf0] hover:bg-[#1d9bf01a] md:flex justify-center items-center transition"
               >
                 <AiOutlineCalendar size={20} />
               </button>

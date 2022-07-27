@@ -1,4 +1,82 @@
 import { IoEllipsisHorizontal } from 'react-icons/io5';
+import { Happenings } from '../lib/Happenings';
+
+const ListItem = ({ data }) => {
+  return (
+    <div className="cursor-pointer hover:bg-gray-100 py-3 px-4 flex items-start gap-3">
+      <div className="flex flex-col">
+        {data.type === 'news' ? (
+          <>
+            <div className="flex items-center text-xs text-gray-500 font-medium gap-x-1">
+              <div className="flex items-center gap-2">
+                <div className="h-4 w-4 rounded-full bg-gray-300 overflow-hidden">
+                  <img src={data.user.profile_picture} alt="" />
+                </div>
+                <div className="font-bold text-gray-800">{data?.user.name}</div>
+              </div>
+              <div>&middot;</div>
+              <div>{data.date}</div>
+            </div>
+            <strong className="text-neutral-800 text-base mb-1 mt-1 leading-tight text-[14px]">
+              {data.text}
+            </strong>
+          </>
+        ) : (
+          <>
+            {(data.category || data.date) && (
+              <div className="flex items-center text-xs text-gray-500 font-medium gap-x-1">
+                <div className="capitalize">{data.category}</div>
+                {data.date && (
+                  <>
+                    <div>&middot;</div>
+                    <div>{data.date}</div>
+                  </>
+                )}
+              </div>
+            )}
+            <strong className="text-neutral-800 text-base mb-0.5 mt-1 leading-tight">
+              {data.text}
+            </strong>
+            {data.total_tweets && (
+              <small className="text-slate-600 font-medium">
+                {data.total_tweets} tweets
+              </small>
+            )}
+          </>
+        )}
+        {data.hashtags && data.hashtags.length > 0 && (
+          <small className="text-slate-500 font-medium">
+            trending with{' '}
+            {data.hashtags.map((tag, i) => (
+              <>
+                {i !== 0 && ', '}
+                <span className="_text-theme" key={i}>
+                  #{tag}
+                </span>
+              </>
+            ))}
+          </small>
+        )}
+      </div>
+      {data?.image ? (
+        <div className="ml-auto">
+          <div className="w-[70px] h-[70px] bg-gray-200 rounded-xl overflow-hidden">
+            <img src={data.image.url} alt={data.image.alt} />
+          </div>
+        </div>
+      ) : (
+        <div className="ml-auto">
+          <button
+            type="button"
+            className="text-gray-500 w-8 h-8 rounded-full hover:text-[#1d9bf0] hover:bg-[#1d9bf01a] flex justify-center items-center transition"
+          >
+            <IoEllipsisHorizontal size={18} />
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const HappeningList = () => {
   return (
@@ -7,74 +85,11 @@ const HappeningList = () => {
         What's happening
       </div>
       <div className="flex flex-col">
-        <div className="cursor-pointer hover:bg-gray-100 py-3 px-4 flex items-start gap-3">
-          <div className="flex flex-col">
-            <div className="flex items-center text-xs text-gray-500 font-medium gap-x-1">
-              <div className="flex items-center gap-2">
-                <div className="h-4 w-4 rounded-full bg-gray-300"></div>
-                <div className="font-bold text-gray-800">sadsadsad</div>
-              </div>
-              <div>&middot;</div>
-              <div>Live</div>
-            </div>
-            <strong className="text-neutral-800 text-base mb-1 mt-1 leading-tight text-[14px]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-              nemo nihil obcaecati.
-            </strong>
-            <small className="text-slate-500 font-medium">
-              trending with <span className="_text-theme">#fdfsdfs</span>,{' '}
-              <span className="_text-theme">#fdfsdfs</span>,{' '}
-              <span className="_text-theme">#fdfsdfs</span>
-            </small>
-          </div>
-          <div className="ml-auto">
-            <div className="w-16 h-16 bg-gray-200 rounded-lg"></div>
-          </div>
-        </div>
-        <div className="cursor-pointer hover:bg-gray-100 py-2 px-4 flex items-start gap-3">
-          <div className="flex flex-col">
-            <div className="flex items-center text-xs text-gray-500 font-medium gap-x-1">
-              <div>dsadasdas</div>
-              <div>&middot;</div>
-              <div>asdasdad</div>
-            </div>
-            <strong className="text-neutral-800 text-base mb-0.5 mt">
-              #RanveerSingh
-            </strong>
-            <small className="text-slate-600 font-medium">200 tweets</small>
-          </div>
-          <div className="ml-auto">
-            <button
-              type="button"
-              className="text-gray-500 w-8 h-8 rounded-full hover:text-[#1d9bf0] hover:bg-[#1d9bf01a] flex justify-center items-center transition"
-            >
-              <IoEllipsisHorizontal size={18} />
-            </button>
-          </div>
-        </div>
-        <div className="cursor-pointer hover:bg-gray-100 py-2 px-4 flex items-start gap-3">
-          <div className="flex flex-col">
-            <div className="flex items-center text-xs text-gray-400 font-medium gap-x-1">
-              <span>dsadasdas</span>
-              <span>&middot;</span>
-              <span>asdasdad</span>
-            </div>
-            <strong className="text-neutral-800 text-base mb-0.5 mt">
-              #RanveerSingh
-            </strong>
-            <small className="text-slate-600 font-medium">200 tweets</small>
-          </div>
-          <div className="ml-auto">
-            <button
-              type="button"
-              className="text-gray-500 w-8 h-8 rounded-full hover:text-[#1d9bf0] hover:bg-[#1d9bf01a] flex justify-center items-center transition"
-            >
-              <IoEllipsisHorizontal size={18} />
-            </button>
-          </div>
-        </div>
+        {Happenings.map((item, i) => (
+          <ListItem key={i} data={item} />
+        ))}
       </div>
-      <div className="cursor-pointer hover:bg-gray-100 _text-theme p-4 font-medium text-sm">
+      <div className="cursor-pointer hover:bg-gray-100 _text-theme p-4 font-semibold text-sm">
         Show More
       </div>
     </div>
