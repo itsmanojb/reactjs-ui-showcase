@@ -11,6 +11,7 @@ import {
   FaRegBookmark,
   FaRegListAlt,
 } from 'react-icons/fa';
+import useAuthContext from '../hooks/useAuthContext';
 
 const NavItem = ({ text, icon, isActive = false }) => {
   return (
@@ -27,6 +28,8 @@ const NavItem = ({ text, icon, isActive = false }) => {
   );
 };
 const SideNav = () => {
+  const { user } = useAuthContext();
+
   return (
     <div className="flex flex-col h-full">
       <div className="mt-1">
@@ -59,7 +62,7 @@ const SideNav = () => {
       <div className="my-2">
         <button
           type="button"
-          className="_bg-theme _hover transition text-white flex items-center justify-center mx-auto xl:ml-0 xl:p-4 rounded-full h-[50px] w-[50px] xl:w-[90%] leading-none font-bold my-1"
+          className="_tweet-btn mx-auto xl:ml-0 xl:p-4  h-[50px] w-[50px] xl:w-[90%] leading-none my-1"
           style={{ boxShadow: 'rgb(0 0 0 / 8%) 0px 8px 28px' }}
         >
           <span className="xl:hidden">
@@ -80,12 +83,20 @@ const SideNav = () => {
       <div className="mt-auto">
         <div className="my-3">
           <div className="hover:bg-neutral-100 rounded-full p-3 w-16 md:w-full -ml-1 md:ml-0 cursor-pointer xl:flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-300"></div>
+            <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-300">
+              <img
+                src={user.profile_picture}
+                alt={user.name}
+                className="h-full w-full"
+              />
+            </div>
             <div className="flex-1 flex-col xl:justify-center leading-none overflow-hidden hidden xl:flex">
               <strong className="font-bold text-sm text-slate-900 truncate">
-                Username lastname
+                {user.name}
               </strong>
-              <p className="text-slate-700 font-medium text-sm">@asdasdsa</p>
+              <p className="text-slate-700 font-medium text-sm">
+                @{user.username}
+              </p>
             </div>
             <div className="ml-auto hidden xl:block">
               <button

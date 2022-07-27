@@ -17,8 +17,6 @@
   --black: rgb(15, 20, 25);
 }
 
-/* @layer components {} */
-
 ._border {
   border-color: var(--border-color);
   border-style: solid;
@@ -42,4 +40,10 @@
 
 ._bg-black {
   background-color: var(--black);
+}
+
+@layer components {
+  ._tweet-btn {
+    @apply _bg-theme _hover transition text-white flex items-center justify-center rounded-full font-bold cursor-pointer;
+  }
 }
