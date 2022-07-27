@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --border-color: rgb(239, 243, 244);
+  --light-gray: rgb(247, 249, 249);
+  --theme-color: rgb(29, 155, 240);
+  --theme-color-hover: rgb(16, 140, 216);
+  --black: rgb(15, 20, 25);
+  --shadow: rgb(101 119 134 / 20%) 0px 0px 15px,
+    rgb(101 119 134 / 15%) 0px 0px 3px 1px;
+}
+
+._border {
+  border-color: var(--border-color);
+  border-style: solid;
+}
+
+._bg_l-g {
+  background-color: var(--light-gray);
+}
+
+._text-theme {
+  color: var(--theme-color);
+}
+
+._bg-theme {
+  background-color: var(--theme-color);
+}
+
+._hover._bg-theme:hover {
+  background-color: var(--theme-color-hover);
+}
+
+._bg-black {
+  background-color: var(--black);
+}
+._shadow {
+  box-shadow: var(--shadow);
+}
+
+@layer components {
+  ._tweet-btn {
+    @apply _bg-theme _hover transition text-white flex items-center justify-center rounded-full font-bold cursor-pointer;
+  }
+
+  ._dd__wrapper {
+    @apply bg-white dark:bg-neutral-800 absolute top-1 rounded-lg p-3 overflow-y-auto _shadow;
+    min-height: 100px;
+    max-height: calc(80vh - 53px);
+  }
+}
