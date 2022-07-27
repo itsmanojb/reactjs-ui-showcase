@@ -3,7 +3,7 @@ import { BsSearch } from 'react-icons/bs';
 
 const SearchDropdown = () => {
   return (
-    <div className="bg-white fixed _dd__wrapper w-[374px] z-10 -top-3 -left-3">
+    <div className="bg-white fixed _dd__wrapper w-[374px] z-10 -top-1.5 -left-3">
       <p className="p-2 text-sm text-center text-neutral-500 font-medium">
         Try searching for people, topics, or keywords
       </p>
@@ -18,7 +18,7 @@ const SearchBox = () => {
         {({ open }) => (
           <>
             <Menu.Button>
-              <div className="h-[53px] flex items-center fixed top-0 z-[2] lg:w-[290px] xl:w-[350px]">
+              <div className="h-[53px] bg-white flex items-center fixed top-0 z-[2] lg:w-[290px] xl:w-[350px]">
                 <div className="bg-gray-100 pl-14 pr-4 py-2.5 rounded-full relative w-full">
                   <span className="absolute left-6 top-4 opacity-60 text-neutral-800">
                     <BsSearch size={15} />
