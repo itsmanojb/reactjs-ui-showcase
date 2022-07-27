@@ -1,5 +1,5 @@
 import {
-  IoHomeOutline,
+  IoHome,
   IoNotificationsOutline,
   IoEllipsisHorizontalCircle,
   IoEllipsisHorizontal,
@@ -17,16 +17,21 @@ const NavItem = ({ text, icon, isActive = false }) => {
   return (
     <div className="cursor-pointer group flex w-[50px] xl:w-full mx-auto xl:ml-0">
       <div className="group-hover:bg-gray-200 rounded-full h-[50px] xl:gap-2 flex items-center xl:pl-4 xl:pr-6 transition">
-        <div className="h-[50px] w-[50px] py-3 flex items-center mx-auto xl:-ml-3 justify-center">
+        <div className="h-[50px] w-[50px] py-3 flex items-center mx-auto xl:-ml-3 justify-center text-neutral-800">
           {icon}
         </div>
-        <div className="hidden xl:block h-[50px] text-lg font-medium text-neutral-800 py-3 -ml-1">
+        <div
+          className={`hidden xl:block h-[50px] text-lg ${
+            isActive ? 'font-bold' : 'font-medium'
+          }  text-neutral-800 py-3 -ml-1`}
+        >
           {text}
         </div>
       </div>
     </div>
   );
 };
+
 const SideNav = () => {
   const { user } = useAuthContext();
 
@@ -41,7 +46,7 @@ const SideNav = () => {
         </a>
       </div>
       <div className="flex flex-col gap-3 mt-2">
-        <NavItem text={'Home'} icon={<IoHomeOutline size={24} />} />
+        <NavItem text={'Home'} isActive={true} icon={<IoHome size={24} />} />
         <NavItem text={'Explore'} icon={<FiHash size={24} />} />
         <NavItem
           text={'Notifications'}

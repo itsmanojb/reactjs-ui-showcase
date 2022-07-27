@@ -7,7 +7,7 @@ const FollowSuggestions = () => {
   ).slice(0, 2);
 
   return (
-    <div className="_bg_l-g rounded-2xl overflow-hidden">
+    <>
       <div className="p-4 font-black text-neutral-800 text-xl">
         Who to follow
       </div>
@@ -46,7 +46,7 @@ const FollowSuggestions = () => {
       <div className="cursor-pointer hover:bg-gray-100 _text-theme p-5 font-semibold text-sm">
         Show More
       </div>
-    </div>
+    </>
   );
 };
 

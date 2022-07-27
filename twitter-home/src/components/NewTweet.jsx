@@ -24,7 +24,7 @@ const NewTweet = () => {
         <div className="flex flex-col flex-1">
           <div className="w-full pt-4 pb-7 pl-2 relative">
             <textarea
-              className="w-full outline-none placeholder:text-slate-500 font-medium text-lg resize-none mb-4"
+              className="w-full outline-none bg-transparent placeholder:text-slate-500 font-medium text-lg resize-none mb-4"
               placeholder="What's happening?"
               rows="1"
               onFocus={() => setFocused(true)}

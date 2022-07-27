@@ -25,7 +25,7 @@ const Feed = () => {
       return (
         <div className="space-y-4">
           {allPosts.map((post, i) => (
-            <PostCard key={i} data={post} />
+            <TweetCard key={i} data={post} />
           ))}
         </div>
       );

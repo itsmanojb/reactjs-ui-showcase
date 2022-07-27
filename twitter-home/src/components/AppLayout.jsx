@@ -1,5 +1,6 @@
 import FollowSuggestions from './FollowSuggestions';
 import HappeningList from './HappeningList';
+import Messages from './Messages';
 import SearchBox from './SearchBox';
 import SideNav from './SideNav';
 
@@ -27,17 +28,17 @@ const AppLayout = ({ children }) => {
             <div className="border-x flex-auto _border w-full max-w-[600px]">
               {children}
             </div>
-            <div className="lg:w-[290px] xl:w-[350px] mr-2.5 pt-14 hidden lg:block">
+            <div className="lg:w-[290px] xl:w-[350px] mr-2.5 pt-10 hidden lg:block">
               <div className="sticky top-0">
+                <SearchBox />
                 <div className="flex flex-col gap-3">
-                  <div>
-                    <SearchBox />
-                  </div>
                   <div>
                     <HappeningList />
                   </div>
                   <div>
-                    <FollowSuggestions />
+                    <div className="_bg_l-g rounded-2xl overflow-hidden">
+                      <FollowSuggestions />
+                    </div>
                   </div>
                   <div className="flex flex-col gap-2 text-[13px] text-slate-600 px-3 pb-20">
                     <p className="flex flex-wrap gap-x-4">
@@ -107,6 +108,7 @@ const AppLayout = ({ children }) => {
           </div>
         </div>
       </div>
+      <Messages />
     </main>
   );
 };

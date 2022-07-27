@@ -79,13 +79,15 @@ const ListItem = ({ data }) => {
 };
 
 const HappeningList = () => {
+  const activities = Happenings.sort(() => 0.5 - Math.random()).slice(0, 5);
+
   return (
     <div className="_bg_l-g rounded-2xl overflow-hidden">
       <div className="p-4 font-black text-neutral-800 text-xl">
         What's happening
       </div>
       <div className="flex flex-col">
-        {Happenings.map((item, i) => (
+        {activities.map((item, i) => (
           <ListItem key={i} data={item} />
         ))}
       </div>

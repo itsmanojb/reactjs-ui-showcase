@@ -4,7 +4,7 @@ const HomeHeader = () => {
   return (
     <div className="sticky top-0 z-10 cursor-pointer">
       <div className="h-[53px] w-full px-2 xs:px-4 max-w-[600px] flex items-center justify-between bg-white bg-opacity-80 backdrop-blur">
-        <h2 className="font-bold text-xl">Home</h2>
+        <h2 className="font-bold text-xl text-neutral-800">Home</h2>
         <div className="ml-auto -mr-2">
           <button
             type="button"
